@@ -95,6 +95,7 @@ fn main() {
         // let a = (0,); //a是一个元组，它有一个元素
         // let b = (0); //b是一个括号表达式，它是i32类型
 
+        //元组tuple
         let p = (1i32, 2i32);
         let (a, b) = p;
         let x = p.0;
@@ -127,9 +128,26 @@ fn main() {
         //名字相同可以使用简写
         let Point{x, y} = p;
         println!("Point is at {} {}", x, y);
+
+        //元组结构体
+        struct T1 {
+            v: i32
+        }
+        struct T2 (i32);
+
+        let v1 = T1 {v : 1};
+        let v2 = T2(1);
+        let v3 = T2{0 : 1};
+
+        let i1 = v1.v;
+        let i2 = v2.0;
+        let i3 = v3.0;
+        println!("i1 = {}, i2 = {}, i3 = {}", i1, i2, i3);
+
     }
 
-    //类型别名
+
+    //类型别名外面的函数
     type Age = u32;
     fn grow(age: Age, year: u32) -> Age{
         age + year
