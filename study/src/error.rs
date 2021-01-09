@@ -16,8 +16,8 @@ fn main(){
     let f = File::open("main.js");
     // println!("{:?}", f);
     match f {
-        Ok(f) => {
-            println!("file found {:?}", f);
+        Ok(t) => {
+            println!("file found {:?}", t);
         },
         Err(e) => {
             println!("file not found \n{:?}", e);
