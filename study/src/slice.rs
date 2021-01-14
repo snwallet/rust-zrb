@@ -6,6 +6,7 @@ fn main(){
     let n = "Tutorial".to_string();
     let sl = &n[4..n.len()];
     println!("{}", sl);
+    // println!("{}", n);   //切片不会改变原始数据的内容
 
     //切片作为函数参数
     let arr = [10, 20, 30, 40, 50];

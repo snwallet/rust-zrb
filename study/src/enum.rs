@@ -1,8 +1,9 @@
 fn main(){
-    
+    //枚举元素的使用
     let selected = Fruits::Banana;
     println!("{:?}", selected);
 
+    //枚举类型作为结构体元素的类型
     let p = Person{
         name: String::from("zheng"),
         gender: GenderGategory::Female
@@ -11,6 +12,7 @@ fn main(){
         name: String::from("wo"),
         gender: GenderGategory::Male
     };
+    //格式化输出结构体实例
     println!("{:?}", p);
     println!("{:?}", p1);
 

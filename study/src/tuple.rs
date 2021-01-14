@@ -43,7 +43,8 @@ fn main(){
     // //consider changing this to be mutable: `mut arr3`
     // arr3[0] = 8;
     // println!("{:?}", arr3);
-    
+    // println!();
+    // println!();
     //数组作为值传递
     let arr3 = [1, 3, 5, 7];
     update1(arr3);

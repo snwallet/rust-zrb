@@ -10,7 +10,7 @@ fn main(){
     println!("Name is {} company is {} age is {}", 
     empl.name, empl.company, empl.age);
 
-    //结构体作为参数
+    //结构体实例作为参数
     display(empl);
 
     //将结构体实例作为函数的返回值
@@ -36,7 +36,7 @@ fn main(){
     println!("width is {}, height is {}, area is {}",
             small.width, small.height, small.area());
 
-    //结构体的静态方法
+    //结构体的静态方法，直接用结构体的名字来调用方法
     let point = Point::get_instance(10, 20);
     point.display();
 }

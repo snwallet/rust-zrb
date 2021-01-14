@@ -66,7 +66,7 @@ impl Printable for Book{
 }
 
 //泛型函数
-fn print_pro<T:Display>(t:T){
+fn print_pro<T: Display>(t:T){
     println!("Inside print_pro generic function:");
     println!("{}", t);
 }
